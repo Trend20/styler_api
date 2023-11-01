@@ -1,4 +1,5 @@
 import mongoose, { Schema } from "mongoose";
+import Role from "./userRoleModel";
 
 const userSchema = new Schema(
   {
@@ -14,6 +15,12 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    roles: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: Role,
+      },
+    ],
   },
   { timestamps: true }
 );

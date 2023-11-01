@@ -9,13 +9,22 @@ const app = express();
 const PORT = process.env.PORT || 8090;
 dotenv.config();
 
+// define cors options
+const corsOptions = {
+  origin: "http://localhost:8091",
+};
+
 // database connection
 connectDB();
 
 // apply middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+app.get("/", (req, res) => {
+  res.json({ message: "This is my styler backend!" });
+});
 
 // listen to the port
 app.listen(PORT, () => {
