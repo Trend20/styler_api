@@ -71,3 +71,65 @@ Building an e-commerce platform backend involves several steps and consideration
     - Plan for ongoing growth and feature enhancements based on user feedback.
 
 Building an e-commerce platform is a complex task, and it often involves collaboration with frontend developers, designers, and domain experts. Following this outlined process can help you create a robust and feature-rich backend for your online shopping platform.
+
+
+<!-- MODELS -->
+I see, you're referring to the types of data entities or objects that an e-commerce project typically models within its database. In an e-commerce project, you would typically have various database entities to represent different aspects of the system. Here are some common database entities in an e-commerce project:
+
+1. **Product**:
+   - Represents individual products for sale.
+   - Fields may include product name, description, price, SKU, category, images, and stock information.
+
+2. **Category**:
+   - Represents product categories or product groupings.
+   - Fields may include category name, description, and parent category (for hierarchical categories).
+
+3. **User**:
+   - Represents users of the e-commerce platform.
+   - Fields may include user information, such as name, email, address, and authentication credentials.
+
+4. **Order**:
+   - Represents customer orders.
+   - Fields may include order ID, user ID, order status, shipping information, and total price.
+
+5. **Order Item**:
+   - Represents individual items within an order.
+   - Fields typically include the product ID, quantity, and price.
+
+6. **Payment**:
+   - Represents payment transactions.
+   - Fields may include payment ID, order ID, payment status, payment method, and transaction details.
+
+7. **Cart**:
+   - Represents a user's shopping cart.
+   - Fields may include the user ID and a list of products or order items in the cart.
+
+8. **Review/Rating**:
+   - Represents user-generated product reviews and ratings.
+   - Fields include the product ID, user ID, review text, and rating score.
+
+9. **Inventory**:
+   - Represents information about product stock levels.
+   - Fields include product ID, available quantity, and warehouse location.
+
+10. **Shipping**:
+    - Represents shipping methods and information.
+    - Fields include shipping method name, cost, and delivery times.
+
+11. **Promotion/Coupon**:
+    - Represents promotional offers or coupons.
+    - Fields may include coupon code, discount percentage, and expiration date.
+
+12. **Wishlist**:
+    - Represents products that users save for later purchase.
+    - Fields include the user ID and a list of product IDs.
+
+13. **User Address**:
+    - Represents user addresses for shipping and billing.
+    - Fields include address details, user ID, and address type (shipping or billing).
+
+14. **Return/Refund**:
+    - Represents return and refund requests for orders.
+    - Fields include order ID, user ID, reason for return, and return status.
+
+These are some of the key database entities that you would commonly find in an e-commerce project. The specific entities and their attributes may vary based on the requirements and complexity of your e-commerce application. It's important to design your database schema to efficiently store and manage the data associated with these entities.
