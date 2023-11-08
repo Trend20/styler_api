@@ -5,9 +5,9 @@ const router = Router();
 
 // login user
 router.post("/login", async (req, res) => {
-  const { name, email, password } = req.body;
+  const { username, email, password } = req.body;
   try {
-    const newUser = await User.findOne({ name });
+    const newUser = await User.findOne({ username });
     if (!newUser) {
       res.status(404).json({ message: "User not found" });
     }

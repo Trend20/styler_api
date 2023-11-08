@@ -3,7 +3,7 @@ import Role from "./userRoleModel";
 
 const userSchema = new Schema(
   {
-    name: {
+    username: {
       type: String,
       required: true,
       unique: true,
@@ -17,12 +17,10 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    roles: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: Role,
-      },
-    ],
+    role: {
+      type: Schema.Types.ObjectId,
+      ref: Role,
+    },
   },
   { timestamps: true }
 );
